@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.elem {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid white;
+}
+
+.elem h1 {
+  position: relative;
+  z-index: 9;
+  font-size: 6vw;
+  mix-blend-mode: difference;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.elem img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  opacity: 0;
+  transition: all linear 0.3s;
+}
