@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3></h3>
+    
+    <script>
+        let para = document.querySelector("h3");
+
+        let sentence = prompt("Write a sentence");
+        let vowels = ["a", "e", "i", "o", "u"];
+        
+        function countVowels(n) {
+            let count = 0;
+
+            n.toLowerCase().split('').forEach((ch) => {
+                vowels.includes(ch) && count++;
+                // console.log(data)
+                
+            })
+            return count;
+        }
+
+        let result = countVowels(sentence);
+        // console.log(result);
+        para.innerHTML = `There are ${result} vowels in this sentence`;
+
+        
+
+
+    </script>
+</body>
+</html>
